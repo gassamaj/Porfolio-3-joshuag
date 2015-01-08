@@ -8,6 +8,6 @@
 $("document").ready(function(){
     $(".practice").css("background-color", "yellow");
     
-
-
-});
+      
+   $ ("p:last").css("color", "green");
+   });
