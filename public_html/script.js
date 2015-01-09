@@ -6,8 +6,28 @@
 
 
 $("document").ready(function(){
-    $(".practice").css("background-color", "yellow");
+    //$('yeah').css('background-color', 'yellow');
     
-      
-   $ ("p:last").css("color", "green");
-   });
+    // $ ('.2').css ({ 'visibility': 'hidden', 'position' : 'absolute'});
+    
+    // $ (div:last p:nth-child(3)').css ('background-color', 'pink');
+    
+    $ ("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
+    
+    //$ ('div').bind('mouseover', mouseOverMe());
+    
+    $ ('h1').bind ('click', mouseClick);
+    });
+    
+    function mouseOverMe () {
+        $ ("p").html("This is easy");
+    }    
+    
+    function mouseOutMe () {
+        $ ('h1').html ('Tayah fire');
+    }    
+    
+    function mouseClick(){
+          
+    $ ('p').html ('taaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaayah');
+    }
