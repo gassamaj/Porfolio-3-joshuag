@@ -6,18 +6,46 @@
 
 
 $("document").ready(function(){
-    //$('yeah').css('background-color', 'yellow');
+    $('yeah').css('background-color', 'yellow');
     
     // $ ('.2').css ({ 'visibility': 'hidden', 'position' : 'absolute'});
     
-    // $ (div:last p:nth-child(3)').css ('background-color', 'pink');
+    // $ ('div:last p:nth-child (3)').css('background-color', 'pink');
     
-    $ ("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
+    // $ ("h1").bind ('mouseover, mouseOverMe).bind ('mouseout', mouseOutMe);
     
-    //$ ('div').bind('mouseover', mouseOverMe());
+    // $ ('h1').bind ('click', mouseClick);
     
-    $ ('h1').bind ('click', mouseClick);
+    $ ('#replaceWText').bind ('click', replaceWText);
+    
+    $ ('#randPara').bind('click', addAPara);
+    
+    $ ('#removePara').bind ('click', removeAPara);
     });
+    
+    function removeAPara (){
+        $ (' #randPara p:last').remove ();
+    }
+    
+    function removeAPara () {
+        $ ('#randpara').append ('<p>ADDED</p>');
+    }
+   
+    function replaceWTest () {
+        $ ('#replaceWText').text ('Replaced!');
+    }
+        
+    
+    
+    
+//    $('div:last p:nth-child(3)').css ('background-color', 'pink');
+//    
+//    $ ("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
+//    
+//    //$ ('div').bind('mouseover', mouseOverMe());
+//    
+//    $ ('h1').bind ('click', mouseClick);
+//    })
     
     function mouseOverMe () {
         $ ("p").html("This is easy");
