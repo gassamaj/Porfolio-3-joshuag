@@ -16,22 +16,29 @@ $("document").ready(function(){
     
     // $ ('h1').bind ('click', mouseClick);
     
+    
+    
     $ ('#replaceWText').bind ('click', replaceWtext);                            
     
-    $ ('#randPara').bind('click', addAPara);
+    $ ('#randWPara').bind('click', addAPara);
     
     $ ('#removePara').bind ('click', removeAPara);
-    });
+    
+    
+ 
+   
+    
+    
     
     function removeAPara (){
         $ (' #randPara p:last').remove ();
     }
     
-    function removeAPara () {
+    function addAPara () {
         $ ('#randpara').append ('<p>ADDED</p>');
     }
    
-    function replaceWTest () {
+    function replaceWtext () {
         $ ('#replaceWText').text ('Replaced!');
     }
         
