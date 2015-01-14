@@ -57,5 +57,7 @@ $("document").ready(function(){
     
     function mouseClick(){
           
-    $ ('p').html ('taaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaayah');
+    $ ('p').html ('swag');
     }
+    
+    
