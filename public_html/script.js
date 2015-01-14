@@ -16,7 +16,7 @@ $("document").ready(function(){
     
     // $ ('h1').bind ('click', mouseClick);
     
-    $ ('#replaceWText').bind ('click', replaceWText);
+    $ ('#replaceWText').bind ('click', replaceWtext);
     
     $ ('#randPara').bind('click', addAPara);
     
