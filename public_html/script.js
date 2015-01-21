@@ -14,7 +14,7 @@ $("document").ready(function() {
 
     // $ ("h1").bind ('mouseover, mouseOverMe).bind ('mouseout', mouseOutMe);
 
-    // $ ('h1').bind ('click', mouseClick);
+     $ ('h1').bind ('click', mouseClick);
 
 
 
@@ -25,11 +25,19 @@ $("document").ready(function() {
     $('#removePara').bind('click', removeAPara);
 $ ('#superHumans').accordion({header: "h3"});
 
+    $('#hide').bind('click', hideThePage);
+
+    $('#show').bind('click', showThePage);
+
 });
 
+function hideThePage(){
+    $('div').hide('explode', {}, 2500);
+}
 
-
-
+function showThePage(){
+    $('div').show('fold', {}, 2500);
+}
 
 function removeAPara() {
     $(' #randPara p:last').remove();
